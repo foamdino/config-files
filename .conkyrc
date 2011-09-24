@@ -1,0 +1,36 @@
+alignment                 top_middle
+background                no
+border_width              0
+cpu_avg_samples           5
+default_color             white
+default_outline_color     white
+draw_borders              no
+draw_graph_borders        no
+draw_outline              no
+draw_shades               no
+use_xft                   yes
+xftfont                   Terminus:size=7
+xftalpha                  1
+gap_x                     0
+gap_y                     0
+minimum_size              20 0
+maximum_width             1920
+net_avg_samples           2
+no_buffers                yes
+out_to_console            yes
+own_window                yes
+own_window_class          Conky
+own_window_type           normal
+own_window_transparent    yes
+own_window_hints          undecorated,below,sticky,skip_taskbar,skip_pager
+update_interval           1.0
+uppercase                 no
+use_spacer                left
+use_spacer                right
+double_buffer             yes
+short_units               yes
+pad_percents              1
+text_buffer_size          512
+
+TEXT
+MPD: [ ${mpd_status}${if_mpd_playing} ${mpd_elapsed}/${mpd_length}$endif ] ${mpd_title} by ${mpd_artist} from ${mpd_album} | Dropbox status: ${execi 6 dropbox status} | ${time %I:%M:%S %p | %B %e, %Y} | ${kernel} | ${uptime} | ${freq_g} GHz | Mem: (${memperc}%) | /boot: ${fs_free_perc /boot}% | /root: ${fs_free_perc /}% | /home: ${fs_free_perc /home}% 
